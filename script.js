@@ -1,6 +1,12 @@
 function calc() {
 		var prix = $('#prix').val();
-        var pourcentage = $('#pourcentage').val();
+     	var pourcentage = $('#pourcentage').val();
+
+
+        if (pourcentage == null){
+        	pourcentage = 10 
+        }
+
         var tip = prix * Number(pourcentage)/100;
         var prix_total = Number(prix) + tip;
 

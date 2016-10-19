@@ -9,29 +9,40 @@
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
+
     </head>
 
     <body>
     <div class="ui-content">
-        <a href="settings.html" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Options</a>
+        <a href="#popupCloseRight" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+            Changer le pourcentage
+        </a>
 
         <h1> FASTiP </h1>
 
             <form action="javascript:void(calc())">
                 Montant : €
-                <input class="form-control" id="prix" type="text">
+                <input id="prix" type="text">
                 <br>
-                <input data-role="button" class="ui-btn ui-corner-all" type="submit" value="Calculer">
+                <input type="submit" value="Calculer">
                 <br>
                 Tip: <span id="tip"></span>€
                 <br>
                 Total: <span id="prix_total"></span>€
             </form>
 
+
+            <div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">             Fermer</a>
+            <label for="pourcentage">ENTREZ VOTRE POURCENTAGE</label>
+            <input type="number" name="number" pattern="[0-9]*" id="pourcentage" value="15">
+            </div>
+
     </div>
 
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
     <script src="script.js"></script>
 
     </body>
