@@ -11,8 +11,12 @@
         </head>
         <body>
             <div class="ui-content">
-                <label for="number-pattern">Number + [0-9]* pattern:</label>
-                <input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+                <form action="javascript:void(calc())">
+                    <label for="pourcentage">ENTREZ VOTRE POURCENTAGE</label>
+                    <input type="number" name="number" pattern="[0-9]*" id="pourcentage" value="">
+
+                    <a href="index.html" data-role="button" class="ui-btn ui-corner-all" > Entrer </a>
+                    </form>
             </div>
 
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
