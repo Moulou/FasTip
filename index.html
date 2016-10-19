@@ -2,23 +2,27 @@
 <html lang="fr">
     <meta charset="UTF-8">
     <head>
-    <title>Tip Calculator</title>
+    <title> FASTiP </title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- bootstrap --> 
+    <!-- jquery mobile -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
     <link href="style.css" rel="stylesheet" type="text/css">
 
     </head>
 
     <body>
-    <div class="container">
+    <div class="ui-content">
         <h1> FASTiP </h1>
 
         <div class="col-md-4"> 
             <form action="javascript:void(calc())">
                 Montant : €
-                <input class="form-control" id="bill" type="text">
+                <input class="form-control" id="prix" type="text">
                 <br>
-                <input class="btn btn-default col-md-4" type="submit" value="Calculate">
+                <input data-role="button" class="ui-btn ui-corner-all" type="submit" value="Calculate">
                 <br>
                 Tip: <span id="tip"></span>
                 <br>
