@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <head>
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- bootstrap --> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+    <div class="container">
+        <h1> FASTiP </h1>
+
+        <div class="col-md-4"> 
+            <form action="javascript:void(calc())">
+                Montant : €
+                <input class="form-control" id="bill" type="text">
+                <br>
+                <input class="btn btn-default col-md-4" type="submit" value="Calculate">
+                <br>
+                Tip: <span id="tip"></span>
+                <br>
+                Total: <span id="total"></span>
+            </form>
+        </div>
+
+    </div>
+
+      <script src="script.js"></script>
+
+    </body>
+
+</html>
